@@ -1,0 +1,10 @@
+.bgimg {
+  background-image: url("./images/pexels-photo-3925879.jpeg");
+  background-size: cover;
+  width: 300px;
+  height: 450px;
+}
+
+.olta {
+  transform: translate(0, 300px);
+}
