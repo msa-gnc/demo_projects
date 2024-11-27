@@ -1,0 +1,60 @@
+:root{
+--nav-bg:#212529;
+--nav-text:#7B959E;
+--nav-hover:#9ba0a1;
+--banner-text:#900080;
+
+}
+
+.navbar{
+    background-color: var(--nav-bg) !important;
+}
+
+.nav-link{
+    color: var(--nav-text) !important;
+}
+
+.nav-link:hover{
+    color: var(--nav-hover) !important;
+}
+
+.banner{
+  background-image: url("./images/banner.jpeg") !important;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.header1{
+    color: var(--banner-text);
+}
+
+
+.header2{
+    color: var(--banner-text);
+}
+
+.fa-solid{
+ background-color: #DB3545;
+}
+
+.portfolio {
+    background-color: #F8F9FA !important; 
+}
+
+.circle{
+    border: 11px solid #CCCCCC !important;
+}
+
+.adverts img{
+    width: 125px;
+    
+}
+
+.contactUs{
+    background-image: url("./images/form-background.jpeg");
+    background-size: cover !important;
+    background-position: center;
+    height: 400px;
+
+}
