@@ -1,5 +1,5 @@
 
-const rastgeleSayi = Math.ceil(Math.random() * 100 + 1);
+let rastgeleSayi = Math.ceil(Math.random() * 100 +1);
 const again = document.querySelector(".again");
 const guess = document.querySelector(".guess");
 const check = document.querySelector(".check");
