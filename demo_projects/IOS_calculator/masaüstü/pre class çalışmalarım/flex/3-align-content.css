@@ -1,0 +1,99 @@
+/* 6-ALİGN-CONTENT 1.wrap flex-containerda uygulanmalıdır. 2.container yüksekliği flex itemdan yüksek olmalıdır.
+align-conten:  stretch
+align-conten: flex-start
+align-conten: flex-end
+align-conten: center
+align-conten: space-between
+align-conten: space-around */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 1rem;
+    background-color: aqua;
+    width: 100vh;
+
+}
+   
+
+.align-content{
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+    height: 1000px;
+    padding: 1rem;
+    width: 200vh;
+} 
+  
+   
+
+
+p{
+    border: 2px solid #000;
+    border-radius: 5px;
+    height: 20%;
+    width: 40px;
+    margin: 3px;
+}
+
+.stretch{
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 200px;
+    width: 250px;
+   align-content: stretch;
+}
+
+.flex-start{
+    background-color: aqua;
+    height: 200px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    
+}
+
+.flex-end{
+    background-color: chocolate;
+    height: 200px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+.center{
+    background-color: crimson;
+    height: 200px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.space-between{
+    background-color: darkred;
+    height: 200px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    gap: ;
+}  
+.space-around{
+    background-color: cyan;
+    height: 200px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+  <!-- EXTERNAL CSS -->
+    <link rel="stylesheet"  type="text/css"  href="./01-css.css"> 
+
+    <!-- INTERNAL CSS -->
+     <style>
+        div{background-color: green;}
+     </style>
+
+
+</head>
+<body>
+   <!-- EXTERNAL CSS -->
+    <p>Bu paragraf external css ile (link) stillendirilmiştir head içerisine  .</p>
+    <!-- head içerisine    <link rel="stylesheet" href="./01-css.css"> yazıldı. -->
+
+    <!-- INTERNAL CSS -->
+ <div>
+    <h2>internal CSS</h2>
+    <p>Bu div internal css ile stillendirilmiştir fakat bu paragraf external css ile stillendi çünkü linkte css dosyası var ve orada p spembe renkli</p>
+     <!-- <style>
+        div{background-color: green;}
+     </style>
+     head kısmına bunu yazdık divi stillendirdik ama external css de p'yi stillendirmiştik p externala göre stillendi -->
+ </div>
+
+    <!-- INLINE CSS -->
+    <p style="background-color: orange;"> bu paragraf inline css ile stillendirilmiştir</p>
+    <!-- burada p nin içerisine girdik ve style ile renk verdik. -->
+
+    <!-- INLINE STYLES external, internal ve default stylesları geçersiz kılar yani ezer 😀 -->
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,294 @@
+/*! CSS Animations */
+/*? @keyframes
+/*? animation-name
+ herhangi bir isim ver
+
+/*? animation-duration 
+animasyon süresi
+
+/*? animation-delay
+ animation-delay özelliği bir animasyonun başlangıcı için bir gecikme belirtir. Negatif değerlere de izin verilir. Negatif değerler kullanılıyorsa, animasyon sanki N saniyedir oynatılıyormuş gibi başlayacaktır.
+
+/*? animation-iteration-count
+ bir animasyonun kaç kez çalıştırılacağını belirtir.
+
+/*? animation-direction
+bir animasyonun ileri, geri veya alternatif döngülerde oynatılıp oynatılmayacağını belirtir. normal, reverse, alternate, alternate-reverse
+
+/*? animation-timing-function
+ özelliği animasyonun hız eğrisini belirtir.
+ 1-ease (default) yavaş başla, hızlan, yavaş dur cubic-bezier(0.25, 0.1, 0.25, 1)
+ 2-linear Baştan sona aynı hızda 
+ 3-ease-in  yavaş başla
+ 4- ease-out   yavaş dur
+ 5- ease-in-out yavaş başla hızlan yavaş dur (0.42, 0, 0.58, 1)
+/*? animation-fill-mode
+1-none (Varsayılan):
+Bu değer, animasyon başladıktan sonra elementin animasyondan önceki durumuna geri dönmesini sağlar. Yani animasyon bitince, element animasyon öncesindeki haline döner.
+2-forwards:
+Animasyon tamamlandığında element, animasyonun son keyframe'inde belirlenen stilleri uygulamaya devam eder. Yani animasyon bitse de, element son durumu ile kalır.
+3-Bu değer, animasyon başlamadan önce elementin ilk keyframe'inde belirlenen stilleri hemen uygulamasını sağlar. Yani animasyon başlamadan önce, ilk karedeki stiller görünür olur.
+4-Hem forwards hem de backwards özelliklerini birleştirir. Yani animasyon başlamadan önce ilk keyframe'in stillerini uygular, animasyon bitince ise son keyframe'in stilleriyle kalır.
+/*? animation */
+
+/*! @keyframes 
+ öğenin belirli zamanlarda hangi stillere sahip olacağını tutar.
+@keyframes kuralı içerisinde CSS stilleri belirttiğinizde animasyon belirli zamanlarda geçerli stilden yeni stile doğru kademeli olarak değişecektir. */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 800px;
+}
+
+.content{  
+    border: 2px solid red;
+    width: 100px;
+    height: 100px;
+    margin: 1rem;
+   
+}
+
+@keyframes content1 {
+    from{ background-color: red;
+
+    }
+    to{ background-color: yellow;
+
+    }
+}
+ /*! animation-duration  */
+.content1{
+    animation-name: content1;
+    animation-duration:3s;
+}
+
+
+@keyframes c2 {
+    from{
+        /* width:100px ; /*! zaten halihazırda bu şekilde yazmasanda olur 
+        height: 100px;
+        background-color: blueviolet; */
+    }
+    to{
+        width: 110px;
+        height: 110px;
+        background-color: aqua;
+    }
+    
+}
+/*! animation-delay */
+.content2{
+    animation-name: c2;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    background-color: blueviolet;
+}
+
+@keyframes c3 {
+    from{
+       /* width: 300px;
+       height: 100px; */
+       background-color: yellow;
+
+    }
+    to{ 
+         /*width: 10px;
+        height: 10px;*/
+        background-color: green;
+
+    }
+    
+}
+/*! animation-iteration-count */
+.content3{
+    background-color: crimson;
+    animation-name: c3;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  
+}
+
+@keyframes c4 {
+    from{
+        background-color: lime;
+    }
+    to {
+        background-color: pink;
+    }
+    
+}
+/*! animation-direction */
+.content4{
+    animation-name: c4;
+    animation-duration: 4s;
+    animation-direction: normal; /* ileri doğru default*/
+}
+
+@keyframes c5 {
+    from{
+        background-color: lime;
+    }
+    to {
+        background-color: pink;
+    }
+    
+}
+
+.content5{
+    animation-name: c4;
+    animation-duration: 4s;
+    animation-direction: reverse; /* tersten başlar*/
+}
+
+@keyframes c6 {
+    from{
+        background-color: lime;
+        
+    }
+    to {
+        background-color: pink;
+        transform: translate(0px,50px);
+    
+    }
+    
+}
+
+.p1{
+    width: 25px;
+    height: 25px;
+    animation-name: c6;
+    animation-duration: 5s;
+    animation-direction: alternate; /* düz başlar, önce ileri gider bittikten sonra bittiği yerde kalır ters başlar yani başa gelir.  düz başlarileri geri yapar*/  
+    animation-iteration-count: 6;
+    
+}
+
+@keyframes c7 {
+    from{
+        background-color: lime;
+        
+    }
+    to {
+        background-color: pink;
+        transform: translate(0px,50px);
+    }
+    
+}
+
+.p7{
+    width: 25px;
+    height: 25px;
+    animation-name: c7;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    animation-direction: alternate-reverse; /*tersen başlar ileri geri yapar*/
+    
+}
+
+@keyframes c7{
+    from{
+
+    }
+    to{
+        transform: translate(0,100px);
+    }
+}
+
+.content7{
+    animation-name: c7;
+    animation-duration: 5s;
+}
+
+@keyframes c8{
+    from{
+
+    }
+    to{
+        transform: translate(0,100px);
+    }
+}
+/*! animation-timing-function*/
+.content8{ 
+    animation-name: c8;
+    animation-duration: 5s;
+    animation-timing-function:linear ;
+
+
+}
+
+@keyframes c9 {
+    from{
+
+    }
+    to{
+        transform: translate(0,100px);
+    }
+}
+
+.content9{
+    animation-name: c9;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+}
+@keyframes c10{
+    from{}
+    to{
+        transform: translate(0,100px);
+    }
+}
+
+.content10{
+    animation-name: c10;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+
+.contents{
+    margin-top: 120px;
+    background-color: aqua;
+}
+
+@keyframes c11{
+    from{
+        background-color: lime;
+    }
+    to{
+        background-color: crimson;
+    }
+}
+/*! animation-fill-mode */
+.c1a{
+    animation-name: c11;
+    animation-duration: 4s;
+    animation-iteration-count:1;
+    animation-fill-mode: none; /*default*/
+    animation-delay: 5s;
+    
+
+}
+
+.c1b{  animation-name: c11;
+    animation-duration: 4s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    animation-delay: 5s;
+
+}
+
+.c1c{
+    animation-name: c11;
+    animation-duration: 4s;
+    animation-iteration-count:1;
+    animation-fill-mode:backwards;
+    animation-delay: 5s;
+}
+
+.c1d{
+    animation-name: c11;
+    animation-duration: 4s;
+    animation-iteration-count:1;
+    animation-fill-mode:both;
+    animation-delay: 5s;
+}

@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://www.istockphoto.com/tr/foto%C4%9Fraf/t%C3%BCrkiye-bayra%C4%9F%C4%B1-gm1126081130-296284341);
+    block-size:  50px 50px;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 100vh;
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 250px 1fr 4fr 1fr;
+    max-width: 1200px;
+
+
+}
+
+header{
+    background-color: teal;
+    grid-column: span 12;}
+
+header img{
+    width: 100%;
+    height: 100%;
+}
+
+nav{background-color: red;
+    color: white;
+    grid-column: span 12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+aside{
+    background-color: skyblue;
+    grid-column: span 3;
+    display: grid;
+    place-items: center;
+
+}
+
+main{
+    background-color: orange;
+    grid-column: span 9;
+    background-image: url(https://media.istockphoto.com/id/1131155838/tr/foto%C4%9Fraf/cesur-bo%C4%9Fa.jpg?s=1024x1024&w=is&k=20&c=Yy7LSrI4nARJWYtNn0r7QR82TwmSQPhQt1TcgM6mbh4=);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    text-shadow: 5px 5px 10px rgb(200, 255, 0);
+    color: red;
+}
+
+
+footer{
+    background-color: olive;
+    grid-column: span 12;
+    display: flex;
+    font-size: 2rem;
+
+}
+
+.tr{background-color: red;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sp{background-color: yellow;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

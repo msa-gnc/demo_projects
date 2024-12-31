@@ -1,0 +1,39 @@
+.yazı1{
+    background-color: cadetblue;
+}
+
+.yazı2{
+    background-color: rgb(134, 255, 10);
+}
+.yazı3{
+    background-color: rgba(255,0,0,0.4);
+}
+
+.yazı4{
+    background-color: #ffab19
+}
+.yazı5{
+    background-color: hsl(0, 50%, 80%)
+}
+.yazı6{
+    background-color: hsl(0, 50%, 80%, 0.3)
+}
+
+.yazı7{
+    background-color: red ;
+}
+.yazı8{
+    background-color:rgb(123, 123, 8) ;
+}
+.yazı9{
+    background-color:rgba(123, 123, 8, 0.4) ;
+}
+.yazı10{
+    background-color: #ff1919; ;
+}
+.yazı11{
+    background-color:hsl(254, 100%   , 80%) ;
+}
+.yazı12{
+    background-color: hsla(254, 100%, 80%, 0.3);
+}

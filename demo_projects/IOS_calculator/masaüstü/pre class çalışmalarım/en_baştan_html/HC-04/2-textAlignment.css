@@ -1,0 +1,15 @@
+.p1{
+    text-align: center;
+}
+.p2{
+    text-align: right;
+}
+.p3{
+    text-align: left;
+}
+.p4 {text-align: justify;}
+
+.div1{
+    border:  solid #000 ;
+    width: 300px;
+}

@@ -1,0 +1,50 @@
+
+.container {
+  background-color:red;
+  margin: 15px 25px;
+  background: linear-gradient(to right bottom, yellow,red );
+ 
+
+.box{
+ width: 100px;
+ height: 100px;
+ place-content:center;
+ text-align: center;
+ 
+
+}
+
+.none {
+  border:  none white;
+}
+
+.dotted {
+  border: dotted white;
+}
+
+.dashed {
+  border: dashed white;
+}
+
+.solid{
+    border: solid white;
+}
+
+.double{
+    border: double white;
+}
+
+.groove{
+    border: groove white;
+}
+
+.ridge{border: ridge white;
+}
+
+.inset{
+    border: inset white;
+}
+
+.outset{
+    border: outset white;
+}

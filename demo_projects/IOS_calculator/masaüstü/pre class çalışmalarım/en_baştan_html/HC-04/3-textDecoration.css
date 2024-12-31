@@ -1,0 +1,22 @@
+.hb{ text-decoration: none; }
+
+h3{text-decoration: line-through;
+text-decoration-color: orange;
+text-decoration-thickness: 4px;} 
+
+h2{text-decoration: overline wavy 5px;
+    text-decoration-color: pink ;}
+
+
+h4{text-decoration: underline; text-decoration-thickness: 10px ;}}
+
+p{text-decoration: overline underline;}
+.p1{text-decoration:overline underline lightblue; 
+    text-decoration-thickness: 15px ;}
+
+.ha{ 
+    text-decoration: underline overline ;
+    text-decoration-color:red;
+    text-decoration-style: dotted;
+
+} 

@@ -1,0 +1,57 @@
+
+.border{
+    border: 3px solid red; 
+    width: 300px;
+    height: 100px; 
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+
+    
+}
+
+.perspective{
+    perspective: 50px;
+    border: 2px solid blueviolet;
+}
+
+/* CSS 3D Transforms
+
+rotateX()
+rotateY()
+rotateZ() */
+
+/* ?rotateZ() */
+/* The rotateX() Method
+The rotateX() method rotates an element around its X-axis at a given degree:
+#myDiv { transform: rotateX(150deg); } */
+
+.rotateX{
+    transform: rotateX(-5deg);
+}
+
+.rotatex2{
+    transform: rotateX(-45deg);
+}
+
+/* ?The rotateY() Method */
+/* The rotateY() method rotates an element around its Y-axis at a given degree:
+#myDiv { transform: rotateY(150deg); } */
+
+.rotateY{
+    transform: rotateY(45deg);
+}
+
+/* ?The rotateZ() Method */
+/* The rotateZ() method rotates an element around its Z-axis at a given degree:
+#myDiv { transform: rotateZ(90deg); } */
+
+.rotateZ{
+    transform: rotateZ(50deg);
+}
+
+.rotate{
+    transform: rotate(50deg);
+}

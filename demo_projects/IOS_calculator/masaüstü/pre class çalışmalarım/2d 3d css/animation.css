@@ -1,0 +1,53 @@
+.outher{
+background-color: brown;
+width: 500px;
+height: 500px;
+}
+
+.inner{
+    background-color: gray;
+    width: 50%;
+    height: 50%;
+
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+    animation-name:hareket ;
+    animation-duration: 2s;
+    animation-timing-function:ease-in-out;
+    animation-delay: 2s;
+    /* animation-iteration-count: infinite; */
+    animation-iteration-count: 3;
+    /* animation-direction: reverse; */
+    animation-direction: alternate;
+   /* animation-fill-mode: forwards;*/ /* bittiği yerde kalır*/
+   /* animation-fill-mode: backwards; */ /* rengi başlamadan değişir*/
+   animation-fill-mode: both; /* hem başlamadan rengi değişir hem de bittiği yerde kalır*/
+
+}
+
+
+
+@keyframes hareket {
+    0%{
+
+        transform: translate(0);
+        background-color: yellow;
+    }
+
+    25%{
+        transform: translateY(100%);
+        background-color: blue;
+        
+    }
+
+    50%{
+        transform: translate(100%,100%);
+        
+        
+    }
+    100%{
+        transform: translateX(100%);
+        background-color: teal;
+        
+    }
+}

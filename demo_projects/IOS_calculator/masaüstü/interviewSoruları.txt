@@ -1,0 +1,55 @@
+
+interview sorusu: javascript nedir? özellikleri nedir? Ezberle
+higl-level
+nesne yönelimli
+yorumlayıcı-abanlı
+dinamatik
+
+
+interwiev sorusu:const ve let ecmascrıpt ile gelmiştir. var eski versiyonlardan beri bulunmaktadır
+interwiev sorusu: bir değişkenin önce kullanılıp sonra tanımlanmasına hoiting denir. javacript hoistingi destekleyen bir dildir.
+
+otomatik tip dönüşümü type conversion "2" + 2 dediğimizde sonuç 22 ama "2" -2 =0 "2" *2 =6  "2"/2 =1 
++ operatörü hariç diğerlerinde number olarak alır js insiyatif kullanır. 
+
+//* Flag Mekanizmasının Avantajları
+//? Kodun Akışını Kolay Kontrol Etme: Flag sayesinde, kullanıcı belirli bir eylemi gerçekleştirdiğinde (örneğin, çıkmak istediğinde) programın nasıl davranacağı netleşir.
+//? Esneklik Sağlama: Flag değişkeni kullanarak farklı durumlarda farklı işlemler yapılabilir. Örneğin, bir koşul sağlandığında belirli bir işlemi durdurabilir veya değiştirebilirsiniz.
+//? Kodun Okunabilirliğini Artırma: Flag değişkenlerinin anlamlı isimlerle tanımlanması, kodu okuyan kişinin programın amacını daha iyi anlamasına yardımcı olur.
+
+
+methodları peş peşe eklemeye chaınıng (pıpelıne) denir
+
+
+js de bubling konusu çıkar
+
+
+***REACT*************REACT******************************************************************************************************************************
+REACT Nedir?; js in bir kütüphanesidir. facebook tarafından 2011 de geliştirildi.framework de deniyor ama framework değildir. Facebook tarafıdan geliştirilmiştir ve
+ facebookun dökümantasyonunda kütüphane diye geçer.
+kütüphane ile framework arasındaki fark : kütüphane esnektir npm install komutu ile bir çok şey kurarız. kendi ihityacımıza göre birçok şeyi indirip kullanıyoruz.
+frame work daha geniş kapsamlıdır ama kendi çercevesi olan birşeydir,zaten frame çerceve demek. pek esnek değildir. kendine özgü belli başlı şeyleri vardır.
+
+
+ React is a wiev .... liblary; MVC (model view controller)  view UI => frontend, Model Data => backend 
+
+***interview sorusu : React MVC katmanının frontend katmanını oluşturur.***************
+***interview sorusu Neden react kullanmamız lazım :
+1- okuması kolay anlaması kolay
+2- Concept of "components" is future of web development. components ile kullanım kulaylığı bir kez yaz sürekli kullan.
+ component ile aynı sayfada kalma sayfa değiştirmeme
+********************************************************************************************************************************************************************
+react facebook tarafından 2011 de üretildi.
+1- ***interview sorusu ezberle react jSX ( javaScript syntax Extension) ract kcomponenti içinde html kodu kullanmamızı sağlyan yapıdır.
+****************jsx js içinde html kodu yazmamızı sağlayan yapıdır.*******************
+2- Virtual DOM and performeance => Reactın çok hızlı çalışmasını sağlayan sayfalar üretir. Updated Virtual DOM değişeni 
+algılıyor diff algoritması ile sadece değişen değiştiriliyor tüm  sayfayı tekrar tekrar bastırmıyoruz virtual/real
+ dom arasındaki diff'i hesaplayıp ona göre güncelliyor. virtual dom hayali dom, yaptığınız işlem gerçek dom kısmında sadece yaptığınız işlem kadar yer kaplar.
+daha hızlı, verimli sayfala
+********************************************************************************************************************************************************************
+
+"Component'ler" (bileşenler), modern web geliştirme yaklaşımlarında bir uygulamanın yapı taşları olarak kullanılan, 
+bağımsız ve tekrar kullanılabilir kod parçalarıdır. Her bileşen genellikle bir kullanıcı arayüzünün belirli bir parçasını temsil eder.
+r
+
+kim reactı kullanıyor: facebook netflix airbnb instagram pinteres 

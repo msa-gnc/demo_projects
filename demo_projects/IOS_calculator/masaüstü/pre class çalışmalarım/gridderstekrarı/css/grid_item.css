@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  grid-template-columns: repeat(4, 1fr); /*üstekiyle aynı 4 tane 1 fr*/
+  /* grid-template-columns: repeat(3,1fr) 10 rem ; ilk üçü 1fr  4.cü 10 
+    /* grid-template-columns: min-content 1fr max-content 1fr; 1.sutun o sutun içindeki en kısa cümlenin genişliğini alır. 3.sutun o sutun içindeki paragraf tek satır olur ve okadar geniş olur */
+  /* gap: 1rem; */
+  /* height: 100vh; */
+  grid-template-rows: 100px 100px 100px 100px 100px;
+  grid-auto-flow: column; /*fazla kalanları sütün olarak yana koyduk*/
+}
+
+.content {
+  border: 2px solid red;
+  background-color: skyblue;
+  /* box-shadow: 5px 5px 10px black; */
+  /* transition: all  1s; */
+}
+
+/* .content:active{
+    box-shadow: none;
+    background-color: orange;
+    background-image: url("https://picsum.photos/id/684/600/400");
+} */
+
+.content1 {
+  background-color: teal;
+  grid-column-start: 1; /* başlama çizgisi */
+  grid-column-end: 3; /* bitiş çizgisi */
+  grid-row-start: 1; /* başlama çizgisi */
+  grid-row-end: 2; /* bitiş çizgisi */
+}
+
+.content12 {
+  /* burdada yer değişikliği yaptık 12 nolu hücreyi 2 ve 3 nolu hücrenin olduğu yer aldık */
+  background-color: rgb(233, 229, 4);
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+
+.content2{
+    background-image: url("https://picsum.photos/id/20/600/400");
+    background-size: cover;
+    grid-column: 2/4;
+    grid-row: 2/4;
+    /* grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end:4 ;*/
+
+} 
+
+.content3{
+    background-color:#ff00ff52;
+    grid-column: 2/4;
+    grid-row: 2/4;
+    /* grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end:4 ; */
+}
+
+.content4{
+    background-color: crimson;
+    grid-column: 1/2;
+    grid-row: 2/5;
+    border-radius: 10px;
+
+}
+
+.content7{
+    background-color: olive;
+    grid-column: 4/5;
+    grid-row: 2/5;
+}
+
+.content6{
+    background-color: lime;
+   /*! grid-area: ; row-start /column-start /row-end /column-end */
+   grid-area: 4/2/6/4 ;
+} 
+
+.content5{
+    background-color: rgba(0, 0, 255, 0.397);
+    grid-area: 4/3/6/5;
+    z-index: 3;
+}
+
+.content8{
+    background-color: rgba(255, 0, 0, 0.397);
+    grid-column:1 /span 4 ; /*1 den bşla 4 hücre git*/
+    grid-row:  5 /span 1;  /* 5den aşla 1 hücre git */
+    z-index: 4;
+}

@@ -1,0 +1,18 @@
+/* ! CSS Transitions */
+/* CSS geçişleri, belirli bir süre boyunca özellik değerlerini sorunsuz bir şekilde değiştirmenize olanak tanır. */
+
+
+/*? transition  */
+
+/*? transition-delay */
+/* Geçişin başlaması için beklenmesi gereken süre (örneğin, 0.5s). */
+
+/*? transition-duration */
+/* Geçişin gerçekleşeceği süre (örneğin, 1s 1 saniye). */
+
+/*? transition-property */
+/* Geçiş yapmak istediğiniz CSS özelliği. */
+
+/*? transition-timing-function */
+/* Ara değerlerin nasıl hesaplanacağını belirler (örneğin, ease, linear, ease-in, ease-out, cubic-bezier). */
+

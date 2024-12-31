@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*! ----------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+ul li{
+    background-color: blue;
+    width: 75px;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+
+ul{
+    background-color: yellow;
+    list-style-type: none;
+    display: flex; /* elementler block elemenet iken inline element oldu*/
+    flex-direction: row; /* zaten default olarak row */
+    justify-content: space-around ; /* x - 2x -2x-2x ..... -x şeklinde boşluk bırakarak yayıyor */
+    flex-wrap: wrap; /* sayfa daraldığında alt alta sıralanıyor responsive tasarımlarda önemli */
+   
+}
+
+
+  /* justify content yatayda hızalama */
+  /* justify-content: flex-end; */ /* hepsini sola yasla arada boşluk yok*/
+  /* justify-content: flex-start; */ /* hesini sağa  yasla arada boşluk yok*/
+  /* justify-content: space-around; */ /* x - 2x -2x-2x ..... -x şeklinde boşluk bırakarak yayıyor */
+  /* justify-content: space-between; */ /* 0-2x-2x-2x-2x-0 şeklinde boşluk bırakarak yayıyor baştaki ve sondakini yaslıyor */
+  /* justify-content: space-evenly; */ /* 2x-2x-2x-2x şeklinde boşluk bırakarak yayıyor.*/
+
+/*! ----------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+div h3{
+    c
+}
+
+div {
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    justify-content: space-between;
+    align-items: stretch; /* default aşağı doğru kaşar gibi sünüyor */
+    align-items:center; /*ortada hizalıyor */
+
+}
+
+
+
+/*! ----------------------------------------------------------------------------------------------------------------------------------------------------------- */
+ol{
+    background-color: red;
+    list-style-type: none;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /*   justify-content: center;   align-items: center; x ve y ekseninde ortalandı */
+    align-items: center; 
+    gap: 1rem 2rem; /*elementler arasında boşluk veriyor* 1. si y ekseninde 2.si x ekseninde*/
+    flex-wrap: wrap; /* burada bu özelliği kullanmasaydık hepsi yan yana görünecekti şimdi alt alta görünüyor */
+    
+}
+
+ol li{
+    background-color: yellow;
+    width: 75px;
+    padding: 1rem;
+ 
+ 
+}
+
+/*! ----------------------------------------------------------------------------------------------------------------------------------------------------------- */
+main h4 {
+    background-color: purple;
+    pad: 1rem;
+    border-radius: 15px;
+}
+
+main{
+    background-color: #bcbcbc;
+    display: flex ;
+    height: 250px;
+    flex-direction: column ; /*  flex-direction: column  olduğunda justify-content:  justify-content:  ters çalışıyor */
+    justify-content: space-around;
+    align-items: center;}
+/*! ----------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    
+h2{
+    background-color: #ffaa44;
+    border-radius: 15px;
+    width: 50;
+    /* padding: 1rem;
+    margin: 1rem; */
+}
+header{
+    background-color: #aa11bb;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-items: center;
+    justify-content:center */
+
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* align-items dikeyde hizalama bir satır*/
+  /* align-items: flex-start üst noktalarını en üste hizalama */
+  /* align-items:flex-end alt noktaları en alta hizalama */
+  /* align-items: center ortada hizalama */
+  /* align-items: baseline içerikleri ortalama */
+  /* align-items: stretch */
+
+  /* display: flex; elementler block elemenet iken inline element oldu */
+  /* flex-wrap: wrap;  sayfa daraldığında elemenetler alt alta doğru gelmesi için */
+
+
+  /* align-content dikeyde hizalama tüm satırlar*/
+  /* align-content: flex-start tüm satırlar yukarıya */
+  /* align-content:flex-end tüm satırlar aşağıya */
+  /* align-content: center ortada hizalama */
+  /* align-content: space-around yukarıdan ven aşağıdan eşit boşluk bırakarak yayma
+    /* align-content: space between en alt ve en üsttekini yaslayıp araları dağıtıyor*/
+  /* align-content: stretch */
+}
+

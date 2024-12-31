@@ -1,0 +1,60 @@
+//? ====================================================
+// ?              FONKSİYONLAR - RECURSIVE
+// ? ====================================================
+
+//* Kendi kendi çağıran fonksiyona recursive fonksiyon denilir.
+// BAzı formülü olan  matematiksel problem için kullanılabilir
+//! Recursive Fonksiyonun Yapısı
+// Bir recursive fonksiyonun çalışması için en az iki temel bileşene ihtiyaç vardır:
+
+//? Sonlanma Koşulu: Fonksiyonun kendi kendini çağırmasını durduran koşul. (Sayma sayısı olduğu için 1den  küçük olursa durmalı)
+
+//? Özyineleme Adımı: Fonksiyonun, kendisini tekrar çağırdığı adım.
+
+//? verilen sayıya kadar(sayı dahil olmak şartıyla) olan sayma sayılarının toplamını bulan fonksiyon
+
+// for döngüsü ile
+
+const toplam = (n) => {
+  let topla = 0;
+  for (i = 1; i <= n; i++) {
+    topla += i;
+  }
+  console.log("sayıların toplamı:", topla);
+};
+toplam(9);
+
+//* recursive fonksiyon ile
+
+const toplamlar = (n) => {
+  if (n < 1) {
+    return n;
+  } else {
+    return toplamlar(n - 1) + n;
+  }
+};
+console.log(toplamlar(9));
+
+// Fonksiyon toplamlar(9) olarak çağrıldığında şöyle çalışır:
+// toplamlar(9) → toplamlar(8) + 9
+// toplamlar(8) → toplamlar(7) + 8
+// toplamlar(7) → toplamlar(6) + 7
+// toplamlar(6) → toplamlar(5) + 6
+// toplamlar(5) → toplamlar(4) + 5
+// toplamlar(4) → toplamlar(3) + 4
+// toplamlar(3) → toplamlar(2) + 3
+// toplamlar(2) → toplamlar(1) + 2
+// toplamlar(1) → toplamlar(0) + 1
+// toplamlar(0) → 0 (sonlanma koşulu sağlandığı için 0 döndürülür)
+
+// toplamlar(8) → toplamlar(7) + 8
+
+const fact = (n) => {
+  if (n === 1) {
+    return n;
+  } else {
+    return fact(n - 1) * n;
+  }
+};
+
+console.log(fact(4));

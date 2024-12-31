@@ -1,0 +1,80 @@
+/* .p1{
+    border-style:dashed;
+    color: red;
+    background-color: yellow;
+    font-style:italic;
+    padding-left: 15px  ;
+}
+.p2{
+    border-style: dotted;
+    width: 100px;
+    height: 100px;
+}
+.p3{
+    border-style: double;
+    margin:10px 15px 10px 25px ;
+    padding: 20px 10px 10px 100px;
+}
+
+.p4{
+    border-style: groove;
+}
+
+
+
+.div1{
+    border-style:outset
+}
+
+p{border-style: inherit;
+
+} */
+
+
+/* 
+<div class="divim">
+<p class="p1">BMW</p>
+<p ıd="p2">Mercedes</p>
+<p>Audi</p>
+
+</div> */
+
+.divim{
+    border: solid black;
+    background-color: blue;
+    width: 500px;
+    height: auto;
+}
+
+.resim{
+    border: ;
+    margin:20px  100px; 
+    width: 300px;
+    text-align: ;
+    
+}
+
+.p1{
+    border: solid green;
+    padding: 10px 245px;
+    background-color: brown;
+    margin: 0;
+    text-align: center;
+}
+
+#p2{
+    border: solid pink;
+    padding: 10px 245px;
+    margin: 0;
+    background-color: yellow;
+    text-align: center;
+}
+
+#p3{    
+    border: solid purple;
+    padding: 10px 245px;
+    margin: 0;
+    background-color: aqua;
+    text-align: center;
+
+}

@@ -1,0 +1,60 @@
+/* 
+The flex container properties are:
+1-flex-direction
+2-flex-wrap
+3-flex-flow
+4-justify-content
+5-align-items
+6-align-content */
+
+/* !------------------------------------------------------------ */
+/* 
+1-FLEX-DİRECTİON
+ flex-direction:row 
+ flex-direction:row-reverse 
+ flex-direction:column 
+ flex-direction:column-reverse;  */
+
+/* !------------------------------------------------------------ */
+/* 
+2-FLEX WRAP
+ flex-wrap: 
+ flex-wrap:nowrap (DEFAULT)
+ flex-wrap:wrap 
+ flex-wrap:wrap-reverse; */
+
+/* !------------------------------------------------------------ */
+/*
+3-FLEX FLOW
+flex-direction ve flex-wrap olmak üzere iki özelliği flex-flow 
+kısaltmasında birleştirebilirsiniz. Belirtilen ilk değer 
+flex-direction ve ikinci değer flex-wrap'tir
+ÖRNEK: flex-flow: row wrap
+
+/* !------------------------------------------------------------ */
+/*
+4-JUSTİFY-CONTENT
+ justify-content:flex-start 
+ justify-content:flex-end
+ justify-content:center
+ justify-content:space-between
+ justify-content:space-around
+ justify-content:space-evenly
+/* !------------------------------------------------------------ */
+/*
+5-ALİGN ITEMS
+ align-items:stretch (default)
+ align-items:flex-start 
+ align-items:flex-end
+ align-items:center
+ align-items:baseline 
+
+ /* !------------------------------------------------------------ */
+ /*
+ 6-ALİGN-CONTENT 1.wrap flex-containerda uygulanmalıdır. 2.container yüksekliği flex itemdan yüksek olmalıdır.
+align-conten:  stretch
+align-conten: flex-start
+align-conten: flex-end
+align-conten: center
+align-conten: space-between
+align-conten: space-around

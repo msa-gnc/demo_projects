@@ -1,0 +1,17 @@
+/* element selector  */ 
+h6{
+    background-color: blue;
+}
+/* grouping selectör */
+
+h3, h4, h5 {background-color: purple;}
+
+/* id selektör */
+#div1{ background-color: red;}
+
+/* class selektör */
+
+.div2{ background-color: green;}
+
+/* unıversal selecktor */
+*{background-color: orange;}

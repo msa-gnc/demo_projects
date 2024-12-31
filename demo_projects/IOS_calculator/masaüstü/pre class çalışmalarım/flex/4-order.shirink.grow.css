@@ -1,0 +1,172 @@
+/*! order:  - değer 0 veya pozitif ne verirsen ver küçükten büyüğe doğru sıralıyor. 4 tane element varken sadece birine order:1 verisen diğerlerini sıfır kabul edip onu en sona atıyor*/
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.order{
+    background-color: brown;
+    display: flex;
+    height: 80px;
+    justify-content: space-around;
+}
+
+
+
+
+.a{
+    order:3 ;
+}
+
+.b{
+    order: 2;
+}
+
+.c{
+    order: -3;
+}
+
+.d{
+    order: -1;
+}
+
+/*!-----------------------------------------------------------------------*/
+
+.shrink{
+    background-color: chartreuse;
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
+ 
+}
+.shrink *{
+    height: 50px;
+}
+
+.a1{
+    background-color: purple;
+    width: 100%;
+
+}
+
+.b1{
+    background-color: pink;
+    width: calc((33.33%) - (2rem/3));
+}
+    
+
+.c1{background-color: pink;
+    width: calc((33.33%) - (2rem/3));
+    
+}
+
+
+
+.d1{background-color: pink;
+    width: calc((33.33%) - (2rem/3));
+}
+
+.e1{
+    background-color: coral;
+    width: 100%;
+
+}
+/*!----------------------------------------------------*/
+/* içinde bulunduğu box içersinde büyüme oranı hesine 1 verirsen hepsi eşit şekilde doldurur
+1 1 2 verirsen %25 %25 %50 şeklinde kalan boşlukları doldurur aşağıdaki örnekta olduğu gibi. */
+
+.flex-grow{
+    background-color: yellowgreen;
+    display: flex;
+    width: 400px;
+    padding: 1rem;
+
+}
+
+.box{
+    background-color: aqua;
+    height: 100px;
+}
+
+.box1{background-color: red;
+    flex-grow:1 ;
+
+}
+.box2{background-color: purple;
+    flex-grow: 1;
+    
+}
+.box3{background-color: crimson;
+    flex-grow: 2;
+    
+}
+
+/*!---------------------------------------------------------------------------*/
+/* ilk flex-basis verdiğimizde mantık olarak width vermiş oluyoruz. 
+sonradan yine flex-grow verirsek kalan boşluğu yine verdiğimiz değer göre eşit olarak alırlar 1  2 1 verisek %25 %50 %25 alırlar  */
+
+.flex-basis{
+    background-color: yellowgreen;
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+
+}
+
+main p{
+    height: 50px;
+  
+}
+
+.p1{background-color: grey;
+    flex-basis: 10px;
+    /* flex-grow: 1; */
+
+}
+.p2{background-color: crimson;
+    flex-basis: 50px;
+    /* flex-grow: 1; */
+    
+}
+.p3{background-color: purple;
+    flex-basis: 250px;
+    /* flex-grow: 1; */
+    
+}
+
+/*!---------------------------------------------------------------*/
+/* shrink ekran küçüldüğünde küçülme oranı*/
+.sec{
+    background-color: yellow;
+    margin-top: 50px;
+    display: flex;
+    gap: 1rem;
+}
+
+.sec div{
+    height: 50px;
+    border: 2px solid red;    
+    width: 150px;
+
+}
+
+.pag1{
+    flex-shrink: 0; /*ekran küçüldüğünde boyutunu korur küçülmez */
+    background-color: aqua;
+}
+
+.pag2{
+    flex-shrink: 1; /* ekran küçüldüğünde 1 kat küçülür*/
+    background-color: darkmagenta;
+    
+}
+
+.pag3{ flex-shrink: 5; /* ekran küçüldüğünde 5 kat küçülür*/
+    background-color: fuchsia;
+    
+}

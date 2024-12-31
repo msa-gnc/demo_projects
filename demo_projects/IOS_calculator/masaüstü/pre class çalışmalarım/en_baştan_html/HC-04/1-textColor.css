@@ -1,0 +1,16 @@
+h1 {
+  color: green;
+}
+h2 {
+  color: rgb(136, 255, 0);
+}
+h3 {
+  color: rgba(255, 0, 200, 0.8);
+}
+h4{
+    color:#88aaf2;
+}
+h5{
+    color: hsl(355, 50%, 50%);
+}
+h6{color: hsla(355, 50%, 50%, 0.6);}

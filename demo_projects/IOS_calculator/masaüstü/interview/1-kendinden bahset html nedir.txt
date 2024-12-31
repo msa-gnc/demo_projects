@@ -1,0 +1,16 @@
+merhaba ben musa genç
+31 yaşındayım
+ankarada yaşıyorum
+hava trafik lojistik ve uluslar arası ilişkiler bölümlerinden mezun oldum.
+ve 6 aydır full stack developer olma yolunda mücadele etmekteyim.
+
+tabi bildiğiniz üzere bu yolun ilk adımı htmldir.
+ bu yüzden biraz htmlden  bahsetmek istiyorum.
+html HyperText Markup Language kelimesiniz kısalmasıdır.
+türkçede hiper metin işaretlme dili, Köprü Biçimlendirme Dili gibi  çevrileri vardır ama
+java pyhton veya c dilleri gibi bir proglama dili değildir.
+web sayfalarının hazırlanmasında kullandığımız sistemdir
+html ile Web sitelerinin iskeletini oluştururuz. bir web sitesinin yapı taşları html ile oluşturulur
+ css ile stillendirmeyi yaparız dinamizminide jacasript ile sağlarız.
+
+

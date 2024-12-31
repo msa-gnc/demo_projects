@@ -1,0 +1,36 @@
+.bh1{text-indent: 100px;}
+.bh8{text-indent: 150px;}
+.bh9{text-indent: 200px;}
+.bh10{text-indent: 250px;}
+.bh11{text-indent: 300px;}
+.bh12{text-indent: 350px;}
+
+
+.bh2{letter-spacing: -6px;}
+.bh3{letter-spacing: -4px;}
+.bh4{letter-spacing: -2px;}
+.bh5{letter-spacing: -0px;}
+.bh6{letter-spacing: 2px;}
+.bh7{letter-spacing: 6px;}
+
+.bş1{word-spacing: -15px ;}
+.bş2{word-spacing: -5px ;}
+.bş3{word-spacing: 0px;}
+.bş4{word-spacing: 15px;}
+.bş5{word-spacing: 25px;}
+.bş6{word-spacing: 40px;}
+
+
+
+#p1{ line-height: 5px;}
+#p2{line-height: 10px;}
+#p3{line-height: 35px;}
+
+
+#bş7{text-shadow:0.5px 0.5px red;}
+#bş8{text-shadow: 0 0 10px red, 10px 0 0 yellow;}
+#bş9{text-shadow:2px 2px 2px #024686 ;}
+#bş10{text-shadow:0 0 3px orange ;}
+#bş11{text-shadow:0 0 3px yellow, 0 0 5px red, 0 0 8px blue ;}
+#bş12{text-shadow: 3px 3px 3px pink, 4px 4px 25px gray}
+

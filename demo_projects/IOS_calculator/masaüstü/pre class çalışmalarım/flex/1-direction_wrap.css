@@ -1,0 +1,108 @@
+.container{
+    background-color: red;
+    display: flex;
+    margin: 5px;
+}
+/*!-----------------------------------------------------------------------------*/
+
+/*flex-direction:
+ flex-direction:row 
+ flex-direction:row-reverse 
+ flex-direction:column 
+ flex-direction:column-reverse; */
+
+
+.flex-direction{
+    background-color:bisque ;
+    display: flex; */
+}
+.row{
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+   
+}
+
+
+.row-reverse{
+    background-color: red;
+    display: flex;
+    flex-direction: row-reverse;
+   
+}
+
+.column{
+    background-color: blue;
+    display: flex;
+    flex-direction:column;
+   
+
+}
+.column-reverse{
+    background-color: pink;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+ h3{
+    border:1px solid;
+    border-radius: 15px;
+}
+/*!-----------------------------------------------------------------------------*/
+.flex-wrap{
+    background-color: #ffaa11;
+    display: flex;
+
+}
+
+.nowrap{
+    display: flex;
+   background-color: #ffaacc;
+   flex-wrap: nowrap; /* (default) */
+   width: 100%;
+}
+.wrap{
+    display: flex;
+    background-color: #aaccbb;
+    flex-wrap: wrap;
+
+}
+.wrap-reverse{
+    display: flex;
+    background-color: #aaaa00;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+}
+
+h4{
+    width: 300px;
+}
+
+
+
+
+
+
+/* 
+The flex container properties are:
+flex-direction
+flex-wrap
+flex-flow
+justify-content
+align-items
+align-content */
+
+/* !------------------------------------------------------------ */
+/* 
+flex-direction:
+ flex-direction:row 
+ flex-direction:row-reverse 
+ flex-direction:column 
+ flex-direction:column-reverse; */
+ /* !------------------------------------------------------------ */
+ /* 
+ flex-wrap: 
+ flex-wrap:nowrap (DEFAULT)
+ flex-wrap:wrap 
+ flex-wrap:wrap-reverse; */

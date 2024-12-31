@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root{
+    --yeşil:green;
+    --koyuyeşil:darkgreen;
+    --turuncu:orange;
+    --koyumavi:darkblue;
+    --lightblue:lightblue;
+
+
+    /* fonts */
+
+    --fug:"Fugaz One"
+}
+
+body{
+    background-color: var(--koyuyeşil);
+}
+h1{
+    background-color: var(--turunuc);
+}
+
+.container{
+    border: 2px solid red;
+    width: 500px;
+    height: 300px;
+
+}
+
+.dark{
+    
+    width: 150px;
+    height: 150px;
+    background-color: var(--lightblue);
+
+}
+
+.light{
+    width: 150px;
+    height: 150px;
+    background-color:var(--koyumavi)
+
+}

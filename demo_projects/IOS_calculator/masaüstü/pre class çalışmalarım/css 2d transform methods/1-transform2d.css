@@ -1,0 +1,120 @@
+.border{
+    border: 2px solid red;
+    width: 300px;
+    height: 100px;
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size:x-large;
+}
+
+
+
+/* !CSS 2D Transforms Methods */
+/* 
+translate()
+rotate()
+scaleX()
+scaleY()
+scale()
+skewX()
+skewY()
+skew()
+matrix() */
+
+/*? The translate() Method */
+/* translate() metodu bir elemanı geçerli konumundan (X ekseni ve Y ekseni için verilen parametrelere göre) taşır. */
+/* div> element 50 pixels to the right, and 100 pixels down from its current position: */
+.translate{
+transform: translate(300px, -30px);
+}
+    
+   
+
+/*? The rotate() Method */
+/* The rotate() method rotates an element clockwise or counter-clockwise according to a given degree. Using negative values will rotate the element counter-clockwise. */
+
+.rotate{
+transform: translate(100px) rotate(45deg)
+
+
+}
+
+.rotate1{
+    transform: rotate(45deg) translate(100px,-300px); /*! çok önemli rotate ile çevirdikten sonra translate ile taşıyınca şeklin eksenleride dönmüş oluyor şekil gibi ona göre taşıyor*/
+    
+}
+
+
+/* ?The scale() Method */
+/* The scale() method increases or decreases the size of an element (according to the parameters given for the width and height).
+
+The following example increases the<div > element to be two times of its original width, and three times of its original height:
+div { transform: scale(2, 3); } */
+
+.scale{
+    transform: scale(2,2) translate(300px);
+}
+
+/* ?The scaleX() Method */
+/* The scaleX() method increases or decreases the width of an element.
+The following example increases the
+<div > element to be two times of its original width:
+div { transform: scaleX(2); } */
+
+
+.scaleX{
+    transform: scaleX(2);
+}
+
+/* ?The scaleY() Method */
+/* The scaleY() method increases or decreases the height of an element.
+The following example increases the
+<div > element to be three times of its original height
+div { transform: scaleY(3); } */
+
+.scaleY{
+    transform: scaleY(2);
+}
+
+/* ?The skewX() method  */
+/* skews an element along the X-axis by the given angle.
+The following example skews the
+<div > element 20 degrees along the X-axis:
+div { transform: skewX(20deg); } */
+
+.skewX{
+    transform: skewX(45deg)
+}
+
+/* ?The skewY() Method */
+/* The skewY() method skews an element along the Y-axis by the given angle.
+The following example skews the
+< div> element 20 degrees along the Y-axis:
+div { transform: skewY(20deg); } */
+
+.skewY{
+    transform: translate(300px) skewY(45deg) 
+}
+
+/* ?The skew() Method */
+/* The skew() method skews an element along the X and Y-axis by the given angles.The following example skews the
+< div> element 20 degrees along the X-axis, and 10 degrees along the Y-axis:
+div { transform: skew(20deg, 10deg); } */
+
+.skew{
+    transform: translate(1000px,-900px) skew(20deg,10deg)
+}
+
+/*! The matrix() Method */
+/* ?The matrix() Method */
+/* The matrix() method combines all the 2D transform methods into one.
+The matrix() method take six parameters, containing mathematic functions, which allows you to rotate, scale, move (translate), and skew elements.
+The parameters are as follow: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+div { transform: matrix(1, -0.3, 0, 1, 0, 0); } */
+
+.matrix{
+    transform: matrix(1,-0.3,1,2,100,25);
+}

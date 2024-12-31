@@ -1,0 +1,110 @@
+.yazı{
+    text-align: center;
+    font-size: 2rem;
+    margin: 1.5rem auto;
+    width: 50vw;
+}
+
+.yazı1{background-color:darkcyan ;
+    transform: rotatex(180deg);
+    
+
+}
+.yazı2{background-color:fuchsia ;
+    transform: rotateY(180deg);
+
+}
+.yazı3{background-color:orange ;
+    position: relative;
+    z-index: 2;
+  /*tıkla yazıya*/
+
+}
+/* !active olanlar tıklayınca değişiyor  hover olan üzerine gelince*/
+.yazı3:active{
+    transform: rotate(-45deg);
+    background-color: red;
+    transform-origin: right;
+    /* transform-origin:20% */
+
+}
+.yazı4{background-color:teal ;
+    transform: scaleX(1.5);
+
+}
+.yazı5{background-color:olive ;
+    transform: scaleY(2);
+
+}
+.yazı6{background-color:red;
+    /* transform: scale(3); */
+    /* yazıya tıkla */
+
+}
+/* ! beraber kullanmak için transform: devamına yazmak gerekiyor alttakigibi */
+.yazı6:active{
+     transform: scale(1.5) rotate(-45deg);
+     background-color: yellow;
+}
+
+.img{
+    transform:skewX(180deg);
+    transform:skewY(180deg);
+    transform:skew(30deg,45deg);
+}
+
+.box{
+    background-color: teal;
+    width: 100px;
+    height: 50px;
+    margin: 2px;
+}
+
+
+.x:active{
+    /* transform:translate(50px); */
+    transform:translateX(50px);
+    background-color: red;
+}
+
+.y:active{
+    transform: translateY(20px);
+    background-color: yellowgreen;
+}
+
+/* .xy:active{
+    transform: translate(50px, -50px);
+    background-color: chocolate;
+} */
+
+.xy{
+    transition: all 1s ease-in-out;
+}
+
+.xy:hover{
+    transform: translate(103px, -52px);
+    background-color: chocolate;
+}
+
+
+/* ! transition  active de yaparsan tıklayınca basılı tutman lazım ana klasa verirsen böyle olmaz ama*/
+
+.x{
+    transition: all 2s ease-in-out;
+}
+
+.y{t
+    transition: all 1s ease-out;
+
+}
+
+.örnek{
+    transition:all 1s cubic-bezier(0.58,-0.41, 0.49, 1.52)
+}
+
+.örnek:active{
+    transform: translate(300px);
+    background-color: chocolate;
+}
+
+
